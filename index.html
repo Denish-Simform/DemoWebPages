@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="head-wrap">
+                <div class="head-image">
+                    <a href="index.html">
+                        <img src="images/domingo-2.png" alt="logo/domingo" height="80px" width="80px">
+                    </a>
+                </div>
+                <div class="head-name">
+                    <h1>DOMINGO TILES</h1>
+                </div>
+                <div class="head-sub-name">
+                    <h4>build the heaven...</h4>
+                </div>
+            </div>
+        </header>
+        <!-- navigation bar -->
+        <nav class="navbar">
+            <div class="nav-div">
+                <div class="nav-links">
+                    <ul class="nav-ul">
+                        <li class="nav-li active">
+                            <a href="#" class="nav-item">Home</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#" class="nav-item">About Us</a>
+                        </li>
+                        <li class="nav-li dropdown">
+                            <a href="#" class="nav-item drpdwn-a">Products</a>
+                            <div class="drpdwn">
+                                <a href="#" class="drpdwn-item">Regular Series</a>
+                                <a href="#" class="drpdwn-item">Fullbody Series</a>
+                                <a href="#" class="drpdwn-item">Ordinary Tiles</a>
+                                <a href="#" class="drpdwn-item">Large Slab</a>
+                                <a href="#" class="drpdwn-item">Porcelain Tiles </a>
+                                <a href="#" class="drpdwn-item">Wooden Stripes</a>
+                            </div>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#" class="nav-item">Export</a>
+                        </li>
+                        <li class="nav-li">
+                            <a href="#" class="nav-item">Information</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navigation bar -->
+        
+        <!-- image slider ------------------------------------------------------------------------>
+        <h1>Image Slider Manual</h1>
+        <div class="img-slider-wrapper">
+            
+            <div class="img-slider-wrap">
+                <div class="img-slide fade">
+                    <div class="img-num">1/5</div>
+                    <img src="images/slider-img-1.png" alt="image-1" height="500px" width="100%">
+                    <div class="img-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt expedita voluptatem architecto, molestias temporibus molestiae. Velit cumque temporibus corrupti, inventore perferendis unde repudiandae nam ea quo vitae repellendus ut placeat laboriosam aspernatur quaerat magni animi hic assumenda eligendi incidunt ex nulla dignissimos nesciunt blanditiis! Modi maxime est harum iure cum minus veniam soluta veritatis animi deleniti rem id exercitationem alias, ipsum placeat quia voluptas! Fuga debitis odit a ad maxime? Omnis rerum quod ut nostrum possimus ipsum. Obcaecati soluta maiores quam iure dolor quo corporis reiciendis aperiam, sunt delectus similique reprehenderit nulla et ratione veniam a mollitia vel? Sequi, eius?</div>
+                </div>
+
+                <div class="img-slide fade">
+                    <div class="img-num">2/5</div>
+                    <img src="images/slider-img-2.png" alt="image-2" height="500px" width="100%">
+                    <div class="img-caption"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ex voluptate nulla repellat. Voluptatibus, aliquid? Iusto earum recusandae asperiores quis expedita nemo exercitationem minima soluta, delectus dolores placeat explicabo illum veniam animi! Possimus modi aspernatur blanditiis a consectetur. Alias consequuntur quae dolorem eos perferendis architecto illo quisquam quia repudiandae quos.</div>
+                </div>
+
+                <div class="img-slide fade">
+                    <div class="img-num">3/5</div>
+                    <img src="images/slider-img-3.png" alt="image-3" height="500px" width="100%">
+                    <div class="img-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, vel recusandae sunt explicabo consequatur ullam quaerat officiis commodi dolorum ex repellendus, quis sit laboriosam quas, expedita rem odio? Molestiae, eaque!</div>
+                </div>
+
+                <div class="img-slide fade">
+                    <div class="img-num">4/5</div>
+                    <img src="images/slider-img-4.png" alt="image-4" height="500px" width="100%">
+                    <div class="img-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae unde optio aperiam est facere sit.</div>
+                </div>
+
+                <div class="img-slide fade">
+                    <div class="img-num">5/5</div>
+                    <img src="images/slider-img-5.png" alt="image-5" height="500px" width="100%">
+                    <div class="img-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officiis dignissimos nam quis maxime quod aliquam debitis ipsum sit eum!</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"><img src="images/prev.png" alt="prev" height="50px" width="50px"></a>
+                <a class="next" onclick="plusSlides(1)"><img src="images/next.png" alt="next" height="50px" width="50px"></a>
+
+            </div>
+
+            <div class="dot-div">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+
+        </div>
+
+        <script>
+            // image-slider
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("img-slide");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            // image-slider
+        </script>
+        <hr>
+
+        <!-- /image-slider ----------------------------------------------------------->
+
+
+        <!-- image-slider-auto ---------------------------------------------------->
+        <h1 style="margin-top: 10px;">Image Slider Automatic</h1>
+        <div class="mySlides fade1">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/slider-img-1.png" style="width:100%;height: 500px;">
+            <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade1">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/slider-img-2.png" style="width:100%;height: 500px;">
+            <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade1">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/slider-img-3.png" style="width:100%;height: 500px;">
+            <div class="text">Caption Three</div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot1"></span> 
+            <span class="dot1"></span> 
+            <span class="dot1"></span> 
+        </div>
+        
+        <script>
+            // image-slider-auto
+        let slideIndex1 = 0;
+        showSlides1();
+        
+        function showSlides1() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot1");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+            slideIndex1++;
+            if (slideIndex1 > slides.length) {slideIndex1 = 1}    
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex1-1].style.display = "block";  
+            dots[slideIndex1-1].className += " active";
+            setTimeout(showSlides1, 2000); // Change image every 2 seconds
+        }
+        </script>
+  
+
+
+        <!-- /image-slider-auto --------------------------------------------------->
+
+
+        <h1>Horizontal division cards</h1>
+
+        <section class="sec">
+            <div class="card-div-wrapper">
+
+                <div class="card-wrap">
+                    <div class="card">
+                        <img src="images/slider-img-1.png" alt="" class="card-img">
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet, voluptatem tempora, quo voluptas iusto est adipisci, ducimus voluptate cumque exercitationem? Distinctio dolor hic, tempore vero a voluptates officia quaerat fugit nisi animi nostrum minima optio assumenda ad et asperiores rerum, consequuntur inventore sit expedita sequi explicabo soluta odio esse.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrap">
+                    <div class="card">
+                        <img src="images/slider-img-2.png" alt="" class="card-img">
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet, voluptatem tempora, quo voluptas iusto est adipisci, ducimus voluptate cumque exercitationem? Distinctio dolor hic, tempore vero a voluptates officia quaerat fugit nisi animi nostrum minima optio assumenda ad et asperiores rerum, consequuntur inventore sit expedita sequi explicabo soluta odio esse.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrap">
+                    <div class="card">
+                        <img src="images/slider-img-3.png" alt="" class="card-img">
+                        <div class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet, voluptatem tempora, quo voluptas iusto est adipisci, ducimus voluptate cumque exercitationem? Distinctio dolor hic, tempore vero a voluptates officia quaerat fugit nisi animi nostrum minima optio assumenda ad et asperiores rerum, consequuntur inventore sit expedita sequi explicabo soluta odio esse.
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </section>
+
+        
+
+
+
+    </body>
+</html>
