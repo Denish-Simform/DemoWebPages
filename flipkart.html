@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .drpdwn-content{
+            
+            margin-top: 9px;
+            display: none;
+            width: max-content;
+            text-align: left;
+            position: absolute;
+            
+            z-index: 1;
+        }
+
+
+        .drpdwn-item{
+            padding: 14px 18px;
+            display: block;
+            text-decoration: none;
+            color: navy;
+            background-color: white;
+            border-bottom: 1px solid lightgray;
+            border-left: 1px solid lightgray;
+            border-right: 1px solid lightgray;
+        }
+
+        .den{
+            display: none !important;
+        }
+
+        .drpdwn:hover .drpdwn-content{
+            display: block;
+        }
+
+        .drpdwn:hover .den{
+            display: inline-block !important;
+        }
+
+        .drpdwn:hover .deni{
+            display: none;
+        }
+
+
+        .drpdwn-item:hover {
+            background-color: whitesmoke;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <div class="col-1"></div>
+                <div class="col-1 d-flex flex-column p-1" style="position: relative;">
+                    <img src="images/flipkart/flipkart-plus_8d85f4.png" alt="" height="20px" width="75px" style="margin-left: 15px;">
+                    <a href="" class="text-body text" style="height: 15px; width: 75px;font-size: small;margin-left: 15px;"><small><em>Explore <span class="text-warning">plus</span></em></small><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt="" height="8px" width="8px" style="margin-left: 2px; top: 25px;position: absolute;"></a>
+                </div> 
+                <div class="col-5">
+                    <input class="p-1 " type="search" name="search" id="searchbar" placeholder="Search for Products, Brands and more" style="width: 90%;">           
+                </div>
+
+                <div class="col-1">
+                    <button type="button" class="bg-light text-primary p-1 container-fluid border-0">Login</button>
+                </div>
+                <div class="col-2">
+                    <button type="button" class="bg-primary border-0 text-light"><h6 class="mb-0 ms-5">Become a Seller</h6></button>
+                </div>
+                <div class="col-1 d-flex flex-row p-1 drpdwn" >
+                    <!-- Example split danger button -->
+                        <h6 href="#" class="bg-primary dropdown text-light mb-0 mt-1 ms-5 ps-2" >More</h6>
+                        <i class="fa fa-caret-down ms-1 mt-1 pl-1 text-light deni"></i>
+                        <i class="fa fa-caret-up ms-1 mt-1 pl-1 text-light den"></i>
+                        <br>
+                        <div class="drpdwn-content" >
+                            <a href="" class="text-light" style="border-bottom: 1px solid lightgray;"><h3 class="text-center mb-0 pb-0"><i class="fa fa-caret-up "></i></h3></a>
+                            <a href="#" class="drpdwn-item">Notification Preferences</a>
+                            <a href="#" class="drpdwn-item">24x7 Customer Care</a>
+                            <a href="#" class="drpdwn-item">Advertise</a>
+                            <a href="#" class="drpdwn-item">Download App</a>
+                        </div>
+                </div>
+                
+                <div class="col-1 pt-1">
+                    <button type="button" class="d-flex flex-row bg-primary border-0 text-light ">
+                        <i class="fa fa-shopping-cart mb-0" aria-hidden="true"></i>
+                        <h6 class="ms-1 mb-0">Cart</h6>
+                    </button>
+                    
+                </div>
+
+
+        
+          
+        </div>
+      </nav>
+    
+</body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
