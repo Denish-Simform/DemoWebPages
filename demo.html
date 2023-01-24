@@ -6,155 +6,131 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    .drpdwn-content {
-      margin-top: 9px;
-      display: none;
-      width: max-content;
-      text-align: left;
-      position: absolute;
-      left: -70px;
-      z-index: 2;
-    }
+  <!-- <style>
+    
+  </style> -->
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/font-awesome/css/all.min.css">
 
-    .drpdwn-item {
-      padding: 14px 18px;
-      display: block;
-      text-decoration: none;
-      color: navy;
-      background-color: white;
-      border-bottom: 1px solid lightgray;
-      border-left: 1px solid lightgray;
-      border-right: 1px solid lightgray;
-    }
 
-    .den {
-      display: none !important;
-    }
-
-    .drpdwn:hover .drpdwn-content {
-      display: block;
-    }
-
-    .drpdwn:hover .den {
-      display: inline-block !important;
-    }
-
-    .drpdwn:hover .deni {
-      display: none;
-    }
-
-    .drpdwn-item:hover {
-      background-color: whitesmoke;
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body class="" style="background-color: beige;">
 
-  <nav class="navbar container-fluid bg-primary navbar-text d-flex justify-content-center">
-    <div class="container ">
+  <div class="">
+    <nav class="navbar navbar-expand bg-primary navbar-text">
+      <div class="container">
         <!-- <div class="col-1 .no-gutters"></div> -->
-        <div class="col-1 d-flex flex-column p-1 logo" style="position: relative;">
-            <img class="bg-primary" src="images/flipkart/flipkart-plus_8d85f4.png" alt="" height="20px" width="75px">
-            <a href="" class="text-body text bg-primary" style="height: 15px; width: 75px;font-size: small;">
-                <small>
-                    <em>Explore <span class="text-warning">plus</span></em>
-                </small>
-                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt="" height="8px" width="8px" style="margin-left: 2px; top: 25px;position: absolute;">
+        <div class="col-1 d-flex flex-column p-1" style="position: relative;">
+          <img class="flipkart-logo" src="images/flipkart/flipkart-plus_8d85f4.png" alt="Flipkart-head" >
+          <a href="" class="text-body flipkart-plus-link">
+            <small>
+              <em ><span class="explore">Explore </span><span class="text-warning">plus</span></em>
+              <sup>
+                <img src="images/flipkart/plus.png" class="flipkart-plus-logo" alt="flipkartplus">
+              </sup>
+            </small>
+          </a>
+        </div>
+
+        <div class="col-6 text-primary nav-search-div">
+          <form action="">
+            <input class="p-1 text-truncate nav-search" type="search" name="search" id="searchbar"
+            placeholder="Search for products, Brands and more">
+            <button class="btn text-primary search-btn" type="button">
+              <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="col-1 .no-gutters justify-content-center d-flex">
+          <button type="button" class="btn btn-light text-primary p-1 border-0 nav-login">Login</button>
+        </div>
+
+        <div class="col-2 .no-gutters text-center">
+          <button type="button" class="btn border-0 text-light nav-seller">
+            <span class="nav-seller-text">Become a Seller</span>
+          </button>
+        </div>
+
+        <div class="col-1 p-1 drpdwn position-relative">
+          <button type="button" class="btn nav-dropdown border-0 text-light">More
+            <i class="fa fa-angle-down mt-1 text-light deni"></i>
+            <i class="fa fa-angle-up mt-1 text-light den"></i>
+          </button>
+          <div class="drpdwn-content">
+            <a href="" class="text-light" style="border-bottom: 1px solid lightgray;">
+              <h3 class="text-center mb-0 pb-0"><i class="fa fa-caret-up "></i></h3>
             </a>
+            <a href="#" class="drpdwn-item">Notification Preferences</a>
+            <a href="#" class="drpdwn-item">24x7 Customer Care</a>
+            <a href="#" class="drpdwn-item">Advertise</a>
+            <a href="#" class="drpdwn-item">Download App</a>
+          </div>
         </div>
-        <div class="col-sm-6 .no-gutters">
-            <input class="p-1 text-truncate " type="search" name="search" id="searchbar" placeholder="Search for Products, Brands and more" style="width: 90%;">
+
+        <div class="col-1">
+          <button type="button" class="btn border-0 text-light nav-cart">
+            <i class="fa fa-shopping-cart mt-1 me-1" aria-hidden="true"></i>
+            <span class="nav-cart-text">Cart</span>
+          </button>
         </div>
-        <div class="col-sm-1 .no-gutters justify-content-center d-flex">
-            <button type="button" class="btn btn-light text-primary p-1 border-0 container-fluid">Login</button>
-        </div>
-        <div class="col-sm-2 .no-gutters text-center">
-            <button type="button" class="btn btn-primary border-0 text-light">
-                Become a Seller
-            </button>
-        </div>
-        <div class="col-sm-1 d-flex flex-row p-1 drpdwn .no-gutters position-relative">
-            <!-- Example split danger button -->
-            <h6 href="#" class="bg-primary dropdown text-light mb-0 mt-1 ps-2">More</h6>
-            <i class="fa fa-caret-down ms-1 mt-1 pl-1 text-light deni"></i>
-            <i class="fa fa-caret-up ms-1 mt-1 pl-1 text-light den"></i>
-            <br>
-            <div class="drpdwn-content">
-                <a href="" class="text-light" style="border-bottom: 1px solid lightgray;">
-                    <h3 class="text-center mb-0 pb-0"><i class="fa fa-caret-up "></i></h3>
-                </a>
-                <a href="#" class="drpdwn-item">Notification Preferences</a>
-                <a href="#" class="drpdwn-item">24x7 Customer Care</a>
-                <a href="#" class="drpdwn-item">Advertise</a>
-                <a href="#" class="drpdwn-item">Download App</a>
-            </div>
-        </div>
-        <div class="col-1 pt-1 .no-gutters">
-            <button type="button" class="d-flex flex-row bg-primary border-0 text-light ">
-                <i class="fa fa-shopping-cart mb-0" aria-hidden="true"></i>
-                <h6 class="ms-1 mb-0">Cart</h6>
-            </button>
-        </div>
-        <div class="col-1 ng-primary me-5 position-relative">
-        </div>
-    </div>
-</nav>
+        <!-- <div class="col-1 ng-primary me-5 position-relative">
+          </div> -->
+      </div>
+    </nav>
+  </div>
+
   <section>
     <div class="container-fluid bg-light shadow-sm">
-      <div class="container">
-        <div class="d-flex flex-row justify-content-around pt-1 pb-1 ">
-
-          <div class="d-flex flex-column text-center align-items-center">
-            <img class="img-fluid" src="images/flipkart/pn1 (1).webp" alt="" height="65px" width="65px">
-            <h6 class="text-dark">Top Offers</h6>
+      <div class="">
+        <div class="">
+          <div class="container d-flex justify-content-around">
+            <div class="d-flex flex-column text-center align-items-center topnav-card">
+              <img class="img-fluid nav-img" src="images/flipkart/pn1.webp" alt="Top Offers"  >
+              <p class="text-dark topnav-card-text ">Top Offers</p>
+            </div>
+  
+            <div class="d-flex flex-column text-center align-items-center topnav-card">
+              <img class="img-fluid nav-img" src="images/flipkart/pn2.webp" alt="Mobiles & Tablets"  >
+              <p class="text-dark topnav-card-text ">Mobiles & Tablets</p>
+            </div>
+  
+            <div class="d-flex flex-column text-center align-items-center topnav-card">
+              <img class="img-fluid nav-img" src="images/flipkart/pn3.webp" alt="Electronics"  >
+              <p class="text-dark topnav-card-text ">Electronics</p>
+            </div>
+  
+            <div class="d-flex flex-column text-center align-items-center topnav-card">
+              <img class="img-fluid nav-img" src="images/flipkart/pn4.webp" alt="TV & Appilances"  >
+              <p class="text-dark topnav-card-text ">TV & Appilances</p>
+            </div>
+  
+            <div class="d-flex flex-column text-center align-items-center topnav-card">
+              <img class="img-fluid nav-img" src="images/flipkart/pn5.webp" alt="Fashion"  >
+              <p class="text-dark topnav-card-text ">Fashion</p>
+            </div>
+  
+            <div class="d-flex flex-column text-center align-items-center topnav-card">
+              <img class="img-fluid nav-img" src="images/flipkart/pn6.webp" alt="Beauty"  >
+              <p class="text-dark topnav-card-text ">Beauty</p>
+            </div>
+  
+            <div class="d-flex flex-column text-center align-items-center topnav-card">
+              <img class="img-fluid nav-img" src="images/flipkart/pn7.webp" alt="Home & Furniture"  >
+              <p class="text-dark topnav-card-text ">Home & Furniture</p>
+            </div>
+  
+            <div class="d-flex flex-column text-center align-items-center topnav-card">
+              <img class="img-fluid nav-img" src="images/flipkart/pn8.webp" alt="Flights"  >
+              <p class="text-dark topnav-card-text ">Flights</p>
+            </div>
+  
+            <div class="d-flex flex-column text-center align-items-center topnav-card">
+              <img class="img-fluid nav-img" src="images/flipkart/pn9.webp" alt="Grocery"  >
+              <p class="text-dark topnav-card-text ">Grocery</p>
+            </div>
           </div>
-
-          <div class="d-flex flex-column text-center align-items-center">
-            <img class="img-fluid" src="images/flipkart/pn2.webp" alt="" height="65px" width="65px">
-            <h6 class="text-dark">Mobiles & Tablets</h6>
-          </div>
-
-          <div class="d-flex flex-column text-center align-items-center">
-            <img class="img-fluid" src="images/flipkart/pn3.webp" alt="" height="65px" width="65px">
-            <h6 class="text-dark">Electronics</h6>
-          </div>
-
-          <div class="d-flex flex-column text-center align-items-center">
-            <img class="img-fluid" src="images/flipkart/pn4.webp" alt="" height="65px" width="65px">
-            <h6 class="text-dark" style="word-wrap: 0;">TV & Appilances</h6>
-          </div>
-
-          <div class="d-flex flex-column text-center align-items-center">
-            <img class="img-fluid" src="images/flipkart/pn5.webp" alt="" height="65px" width="65px">
-            <h6 class="text-dark">Fashion</h6>
-          </div>
-
-          <div class="d-flex flex-column text-center align-items-center">
-            <img class="img-fluid" src="images/flipkart/pn6.webp" alt="" height="65px" width="65px">
-            <h6 class="text-dark">Beauty</h6>
-          </div>
-
-          <div class="d-flex flex-column text-center align-items-center">
-            <img class="img-fluid" src="images/flipkart/pn7.webp" alt="" height="65px" width="65px">
-            <h6 class="text-dark">Home & Furniture</h6>
-          </div>
-
-          <div class="d-flex flex-column text-center align-items-center">
-            <img class="img-fluid" src="images/flipkart/pn8.webp" alt="" height="65px" width="65px">
-            <h6 class="text-dark">Flights</h6>
-          </div>
-
-          <div class="d-flex flex-column text-center align-items-center">
-            <img class="img-fluid" src="images/flipkart/pn9.webp" alt="" height="65px" width="65px">
-            <h6 class="text-dark">Grocery</h6>
-          </div>
-
         </div>
       </div>
     </div>
@@ -167,12 +143,15 @@
             <div class="carousel-item active " data-interval="1000">
               <img class="d-block w-100" src="images/flipkart/s-1.png" alt="First slide">
             </div>
+
             <div class="carousel-item" data-interval="1000">
               <img class="d-block w-100" src="images/flipkart/s-2.png" alt="Second slide">
             </div>
+
             <div class="carousel-item" data-interval="1000">
               <img class="d-block w-100" src="images/flipkart/s-3.png" alt="Third slide">
             </div>
+
             <div class="carousel-item" data-interval="1000">
               <img class="d-block w-100" src="images/flipkart/s-4.png" alt="Third slide">
             </div>
@@ -186,12 +165,11 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-
       </div>
     </div>
     <div class="container-fluid mt-3">
       <div class=" container bg-light d-flex justify-content-center p-1">
-        <img src="https://rukminim1.flixcart.com/fk-p-flap/800/100/image/d2299d4693f96453.jpg?q=50" alt=""
+        <img src="images/flipkart/offer-add-horizontal.png" alt="Offer Advertisement"
           class="border border-light rounded">
       </div>
     </div>
