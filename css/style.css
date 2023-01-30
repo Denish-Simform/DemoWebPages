@@ -115,6 +115,15 @@ body{
     .nav-img:hover .topnav-card-text{
       color: var(--bs-primary);
     }
+
+    .card{
+      max-width: 200px;
+      max-height: 400px;
+    }
+
+    .card-title{
+      font-weight: bold;
+    }
   
     @media only screen and (max-width: 600px) {
       .nav-img {
