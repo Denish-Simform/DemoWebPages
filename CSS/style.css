@@ -58,7 +58,7 @@ body{
       border-right: 1px solid lightgray;
     }
   
-    .den {
+    .angle-up-more {
       display: none !important;
     }
   
@@ -66,11 +66,11 @@ body{
       display: block;
     }
   
-    .drpdwn:hover .den {
+    .drpdwn:hover .angle-up-more {
       display: inline-block !important;
     }
   
-    .drpdwn:hover .deni {
+    .drpdwn:hover .angle-down-more {
       display: none;
     }
   
@@ -189,11 +189,11 @@ body{
         font-weight: bold;
       }
   
-      .deni{
+      .angle-down-more{
         display: none !important;
       }
   
-      .den{
+      .angle-up-more{
         display: none !important;
       }
 
@@ -216,7 +216,7 @@ body{
   
       .card-text{
         font-size: smaller;
-        overflow: hidden;
+        overflow: hidangle-up-more;
         text-overflow: ellipsis ;
       }
     }
