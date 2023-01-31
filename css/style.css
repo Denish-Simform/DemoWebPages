@@ -225,7 +225,7 @@ body{
   
       .card-text{
         font-size: smaller;
-        overflow: hidangle-up-more;
+        overflow: hidden;
         text-overflow: ellipsis ;
       }
     }
